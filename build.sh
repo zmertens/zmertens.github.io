@@ -1,4 +1,5 @@
 #!/usr/bin/bash
 
-# Update git submodules
-git submodule update
+# Update repositories
+git pull
+#git submodule update

@@ -1,3 +1,12 @@
 [submodule "seq_and_destroy"]
 	path = seq_and_destroy
 	url = https://github.com/zmertens/SeqAndDestroy.git
+[submodule "mazed"]
+	path = mazed
+	url = https://github.com/zmertens/mazed.git
+[submodule "starless"]
+	path = starless
+	url = https://github.com/zmertens/starless.git
+[submodule "dawg"]
+	path = dawg
+	url = https://github.com/zmertens/dawg.git
