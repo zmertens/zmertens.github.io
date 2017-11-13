@@ -1,0 +1,3 @@
+[submodule "seq_and_destroy"]
+	path = seq_and_destroy
+	url = https://github.com/zmertens/SeqAndDestroy.git
