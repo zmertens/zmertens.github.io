@@ -1,17 +1,11 @@
 # zmertens.github.io
-<<<<<<< Updated upstream
-
- - @zmertens
- - Blog
- -
+ - Poems
+ - Satire
+ - @TODO "Dear Imgui" on the web using Emscripten **https://github.com/omcornut/imgui**
+ - @TODO Dawg with Emscripten
+ - @TODO SignatureTracer
+ - @TODO SeqAndDestroy evolution game
 
 
 =================
 term > ....?
-
-> This site uses a Markdown-based technique for managing this website's content
-> This means that each page index is produced by parsing a Markdown file into HTML
-> Some of the features of the website are written using tools such as Emscripten
-=======
- - A site where I can experiment with the web
->>>>>>> Stashed changes
