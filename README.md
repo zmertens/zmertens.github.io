@@ -5,7 +5,3 @@
  - @TODO Dawg with Emscripten
  - @TODO SignatureTracer
  - @TODO SeqAndDestroy evolution game
-
-
-=================
-term > ....?
