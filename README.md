@@ -1,7 +1,7 @@
 # zmertens.github.io
  - Poems
  - Satire
- - @TODO "Dear Imgui" on the web using Emscripten **https://github.com/omcornut/imgui**
- - @TODO Dawg with Emscripten
+ - Use Godot as a game engine
+ - @TODO Dawg with Emscripten (matrix thing)
  - @TODO SignatureTracer
  - @TODO SeqAndDestroy evolution game
