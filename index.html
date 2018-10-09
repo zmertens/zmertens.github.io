@@ -1,36 +1,277 @@
-<h1>github.com/zmertens</h1>
-<blockquote>
-<p>If you're not able to write good code, try to write good comments <br> If you can't write good comments, try to teach Jim</p>
-</blockquote>
-<ul>
-<li><a href="https://github.com/zmertens/MazeGameCpp">MazeGameCpp</a></li>
-</ul>
-<p>I attempted to make a first-person shooter from scratch.
-Inspiration came from <a href="https://github.com/BennyQBD/Wolfenstein3DClone">this's guys Wolfenstein clone</a>.
-I also added some Phong shading and Perlin noise and some sounds and music. I never really could get past that point once I had those features working. I thought of trying to add A-star pathfinding and automated level generation but I couldn't really keep up with the complexity of the code.</p>
-<p>Overall, <em>MazeGameCpp</em> was a good learning experience and I think it gave me an estimate of about how much of my own code I could manage in a one-man-wolf-project.</p>
-<p>I've since moved on to trying to use bonafide game engines such as <a href="https://doc.babylonjs.com/">BabylonJS</a> and <a href="https://godotengine.org/">Godot</a> and I dabbled with Unity and Unreal for a bit.</p>
-<p>Other thoughts about game engines and the creative process can be expertly summarized in <a href="https://www.google.com/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=video&amp;cd=9&amp;cad=rja&amp;uact=8&amp;ved=0ahUKEwidhKub-6HbAhVDR6wKHfHBBnIQtwIITjAI&amp;url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DGK7ntA7a2vk&amp;usg=AOvVaw1rtrkCC_u7X4_ER08MOh4o">this senior developer's lecture</a> at Digipen.</p>
-<ul>
-<li><a href="https://github.com/zmertens/Checkers">Checkers</a></li>
-</ul>
-<p>This started as a school project for an <em>Introduction to Programming Languages, CSE240</em> course at <strong>Arizona State University</strong>.
-The idea was to create the Checkers logic in C++, and for extra credit, add a GUI. I don't remember if we got to adding the GUI, but afterwords I kept working on it and used <a href="sfml-dev.org">SFML</a> to create some graphics. It helped me land an internship later on which was great.</p>
-<ul>
-<li><a href="https://github.com/zmertens/SeqAndDestroy">SeqNDestroy</a></li>
-</ul>
-<p>I worked on this in the <a href="https://cartwrig.ht/">Cartwright Lab</a> for a community outreach event with @anderspitman and @aahowell3. The idea was to make a bubble-shooter-like game that emulates how HIV cells are reproduced and destroyed.
-Most of the JavaScript was written by @anderspitman; we used PhaserIO for the game engine and I shamelessly took one of the PhaserIO Worley shader examples to use as a background.</p>
-<ul>
-<li><a href="https://github.com/zmertens/InitializeMyInitials">InitializeMyInitials</a></li>
-</ul>
-<p>This is a toy application that lets you render small blocks of 3D text and save it as a PNG or GIF.
-It's a work-in-progress and written using <a href="https://doc.babylonjs.com/">BabylonJS</a>.</p>
-<ul>
-<li><a href="https://github.com/zmertens/cmake-example">cmake-example</a></li>
-</ul>
-<p>This is how I remind me how to use CMake.
+<!DOCTYPE html>
+<html class="no-js" lang="en-US">
+<!-- https://www.w3schools.com/w3css/tryw3css_templates_cafe.htm -->
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width", initial-scale="1.0" />
+<meta name="description" content="A portfolio and blog" />
+<meta name="keywords" content="static side;github;blog;projects,portfolio" />
+<meta name="author" content="zmertens" />
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+
+<title>github.com/zmertens/zmertens.github.io</title>
+
+<style>
+body, html {
+    height: 100%;
+    font-family: "Inconsolata", sans-serif;
+}
+.bgimg {
+    background-position: center;
+    background-size: cover;
+    /* background-image: url("https://media.giphy.com/media/9r1isaLSyHY1cnvUT9/giphy.gif"); */
+    background-image: url("https://media.giphy.com/media/26u43GwxpIiUgrHI4/giphy.gif");
+    min-height: 75%;
+}
+.menu {
+    display: none;
+}
+</style>
+
+<script type="text/javascript" src="randomLinks.js"></script>
+
+</head>
+
+<body>
+<!-- Links (sit on top) -->
+<div class="w3-top">
+<div class="w3-row w3-padding w3-black">
+    <div class="w3-col s3">
+    <a href="#" class="w3-button w3-block w3-black">HOME</a>
+    </div>
+    <div class="w3-col s3">
+    <a href="#about" class="w3-button w3-block w3-black">ABOUT</a>
+    </div>
+    <!-- <div class="w3-col s3"> -->
+    <!-- <a href="#menu" class="w3-button w3-block w3-black">MENU</a> -->
+    <!-- </div> -->
+    <!-- <div class="w3-col s3"> -->
+    <!-- <a href="#where" class="w3-button w3-block w3-black">WHERE</a> -->
+    <!-- </div> -->
+    <div class="w3-col s3">
+        <a href="#tutorials" class="w3-button w3-block w3-black">TUTORIALS</a>
+    </div>
+    <div class="w3-col s3">
+        <a href="#projects" class="w3-button w3-block w3-black">PROJECTS</a>
+    </div>
+    <div class="w3-col s3">
+        <a href="#blog" class="w3-button w3-block w3-black">BLOG</a>
+    </div>
+</div>
+</div>
+      
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+<div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+    <!-- <span class="w3-tag">Open from 6am to 5pm</span> -->
+</div>
+<div class="w3-display-bottomleft w3-center w3-padding-large">
+    <span class="w3-text-white" style="font-size:90px"><em>{zachmertensmcconnell}</em></span>
+</div>
+<div class="w3-display-bottomright w3-center w3-padding-large">
+    <!-- <span class="w3-text-white">15 Adr street, 5015</span> -->
+</div>
+</header>
+      
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+<div class="w3-content" style="max-width:700px">
+<h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">ABOUT</span></h5>
+<p>
+    Salutations, my name is Zach Mertens-McConnell. I am an American citizen.
+    I am hoping to use this site to share some of my experiences and beliefs
+    regarding my work on code both as a hobby and professionally.
+    I would also like to talk about some of my experiences attending hacking meetups.
+    Additionally, I'll mention some extracurricular projects I'm working on.
+    Finally, I'll drop various infinitely-looping gifts for entertainment and
+    personal amuesement.
+</p>
+<!-- <div class="w3-panel w3-leftbar w3-light-grey">
+<p><i>"Use products from nature for what it's worth - but never too early, nor too late." Fresh is the new sweet.</i></p>
+<p>Chef, Coffeeist and Owner: Liam Brown</p>
+</div> -->
+<!-- <img src="/w3images/coffeeshop.jpg" style="width:100%;max-width:1000px" class="w3-margin-top"> -->
+</div>
+</div>
+
+<!-- Projects Container -->
+<div class="w3-container" id="projects">
+<div class="w3-content" style="max-width:700px">
+<h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">PROJECTS</span></h5>
+<p>
+    Here's a summary of some of my past, present, and future pet projects:
+    <ol>
+        <li>
+            <a href="github.com/zmertens/MazeGameCpp" target="_blank"></a>
+
+            I attempted to make a first-person shooter from scratch. 
+            Inspiration came from [this's guys Wolfenstein clone](https://github.com/BennyQBD/Wolfenstein3DClone).
+            I also added some Phong shading and Perlin noise and some sounds and music. I never really could get past that point once I had those features working. I thought of trying to add A-star pathfinding and automated level generation but I couldn't really keep up with the complexity of the code.
+            
+            Overall, *MazeGameCpp* was a good learning experience and I think it gave me an estimate of about how much of my own code I could manage in a one-man-wolf-project.
+            
+            I've since moved on to trying to use bonafide game engines such as [BabylonJS](https://doc.babylonjs.com/) and [Godot](https://godotengine.org/) and I dabbled with Unity and Unreal for a bit.
+            
+            Other thoughts about game engines and the creative process can be expertly summarized in [this senior developer's lecture](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=video&cd=9&cad=rja&uact=8&ved=0ahUKEwidhKub-6HbAhVDR6wKHfHBBnIQtwIITjAI&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DGK7ntA7a2vk&usg=AOvVaw1rtrkCC_u7X4_ER08MOh4o) at Digipen.
+        </li>
+        <li>
+            word
+        </li>
+    </ol>
+    
+    <a href="https://github.com/zmertens/checkers" target="_blank"></a>
+
+This started as a school project for an *Introduction to Programming Languages, CSE240* course at **Arizona State University**.
+The idea was to create the Checkers logic in C++, and for extra credit, add a GUI. I don't remember if we got to adding the GUI, but afterwords I kept working on it and used [SFML](sfml-dev.org) to create some graphics. It helped me land an internship later on which was great.
+    <a href="github.com/zmertens/Parlez13k" target="_blank"></a>
+    <a href="github.com/zmertens/SeqAndDestroy" target="_blank"></a>
+    I worked on this in the [Cartwright Lab](https://cartwrig.ht/) for a community outreach event with @anderspitman and @aahowell3. The idea was to make a bubble-shooter-like game that emulates how HIV cells are reproduced and destroyed.
+    Most of the JavaScript was written by @anderspitman; we used PhaserIO for the game engine and I shamelessly took one of the PhaserIO Worley shader examples to use as a background.
+    <a href="github.com/zmertens/closer" target="_blank"></a>
+    An artistic text editor designed to show Git repository versions in-depth.
+    <a href="github.com/zmertens/zmertens.githbu.io" target="_blank">This website</a>
+    <a href="github.com/zmertens/cmake-example" target="_blank"></a>
+    This is how I remind me how to use CMake. 
 Some of the features include ExternalDependencies and creating a shared/static library.
-I've been down the bottle of every build system, <em>yeah</em>.</p>
-<h2></h2>
-<p><img src="https://media.giphy.com/media/5Ga20ocJ6ANLW/giphy.gif" alt="moto-chick"></p>
+I've been down the bottle of every build system, *yeah*.
+    <a href="WIP" target="_blank">WIP</a>
+</p>
+<p>
+    Here's a summary of some of my contributions and forks:
+  
+    <a href="https://github.com/zmertens/imgui" target="_blank">Working on ImGui</a>
+    <a href="https://github.com/zmertens/dawg" target="_blank">Working on Dawg</a>
+</p>
+<!-- <div class="w3-panel w3-leftbar w3-light-grey">
+<p><i>"Use products from nature for what it's worth - but never too early, nor too late." Fresh is the new sweet.</i></p>
+<p>Chef, Coffeeist and Owner: Liam Brown</p>
+</div> -->
+<!-- <img src="/w3images/coffeeshop.jpg" style="width:100%;max-width:1000px" class="w3-margin-top"> -->
+<p><strong>GitHub Account:</strong> <a href="https://github.com/zmertens" target="_blank" class="w3-hover-text-blue">My GitHub</a></p>
+<p><strong>LinkedIn:</strong> <a href="https://linkedin.com/zmm45312" target="_blank" class="w3-hover-text-pink">My LinkedIn</a></p>
+</div>
+</div>
+
+<!-- Tutorials Container -->
+<div class="w3-container" id="tutorials">
+<div class="w3-content" style="max-width:700px">
+
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">TUTORIALS</span></h5>
+    <p><strong>YouTube Coding Tutorials:</strong> 
+        <a href="https://www.youtube.com/watch?v=fNjzV-9jpA0&list=PLyenNY2zSxuwl06zvpihAJ3u-Mdd_gXEE" 
+        target="_blank"
+        class="w3-hover-text-red">Coding Tutorials</a></p>
+    <!-- <div class="w3-row w3-center w3-card w3-padding">
+    <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">
+        <div class="w3-col s6 tablink">Eat</div>
+    </a>
+    <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
+        <div class="w3-col s6 tablink">Drink</div>
+    </a>
+    </div> -->
+
+    <!-- <div id="Eat" class="w3-container menu w3-padding-48 w3-card">
+    <h5>Bread Basket</h5>
+    <p class="w3-text-grey">Assortment of fresh baked fruit breads and muffins 5.50</p><br>
+    
+    <h5>Honey Almond Granola with Fruits</h5>
+    <p class="w3-text-grey">Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p><br>
+    
+    <h5>Belgian Waffle</h5>
+    <p class="w3-text-grey">Vanilla flavored batter with malted flour 7.50</p><br>
+    
+    <h5>Scrambled eggs</h5>
+    <p class="w3-text-grey">Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</p><br>
+    
+    <h5>Blueberry Pancakes</h5>
+    <p class="w3-text-grey">With syrup, butter and lots of berries 8.50</p>
+    </div>
+
+    <div id="Drinks" class="w3-container menu w3-padding-48 w3-card">
+    <h5>Coffee</h5>
+    <p class="w3-text-grey">Regular coffee 2.50</p><br>
+    
+    <h5>Chocolato</h5>
+    <p class="w3-text-grey">Chocolate espresso with milk 4.50</p><br>
+    
+    <h5>Corretto</h5>
+    <p class="w3-text-grey">Whiskey and coffee 5.00</p><br>
+    
+    <h5>Iced tea</h5>
+    <p class="w3-text-grey">Hot tea, except not hot 3.00</p><br>
+    
+    <h5>Soda</h5>
+    <p class="w3-text-grey">Coke, Sprite, Fanta, etc. 2.50</p>
+    </div>  
+    <img src="/w3images/coffeehouse2.jpg" style="width:100%;max-width:1000px;margin-top:32px;"> -->
+</div>
+</div>
+
+<!-- Blog Container -->
+<div class="w3-container" id="blog">
+<div class="w3-content" style="max-width:700px">
+<h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">BLOG</span></h5>
+<p>
+    I had an exciting time attending the Desert Code Camp 2018 convention at the
+    Chandler-Gilbert Community College. This event has been going on for several years,
+    and it has done a great job in organizing local coders, tech evangelists, and
+    industry leaders. Turnout was great, lectures were informative and relevant to
+    their title, and there was free food.
+</p>
+
+<!-- <p> -->
+    <!-- In addselection of sides and salads and other good stuff. -->
+<!-- </p> -->
+<!-- <div class="w3-panel w3-leftbar w3-light-grey">
+<p><i>"Use products from nature for what it's worth - but never too early, nor too late." Fresh is the new sweet.</i></p>
+<p>Chef, Coffeeist and Owner: Liam Brown</p>
+</div> -->
+<!-- <img src="/w3images/coffeeshop.jpg" style="width:100%;max-width:1000px" class="w3-margin-top"> -->
+<!-- <p><strong>GitHub Account:</strong> everyday from 6am to 5pm.</p>
+<p><strong>LinkedIn:</strong> 15 Adr street, 5015, EARTH</p> -->
+</div>
+</div>
+
+<!-- Contact/Area Container -->
+<div class="w3-container" id="where" style="padding-bottom:32px;">
+<div class="w3-content" style="max-width:700px">
+<h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">WHERE TO FIND US</span></h5>
+<!-- <p>Find us at some address at some place.</p>
+<div id="googleMap" class="w3-sepia" style="width:100%;height:400px;"></div> -->
+<p><span class="w3-tag">FYI!</span> 
+    This site is my personal website where I talk about my feelings.
+    I am extremely thankful for the GitHub static site service for providing this static site service.
+    <em>You do want to express yourself don't you?</em>
+    <em>The thoughts and opinions posted here represent nothing in particular but my spacetime.</em>
+</p>
+<!-- <p><strong>Random Link</strong> takes you anywhere</p>
+<form action="randomLinks()" target="_blank"> -->
+    
+</form>
+    <!-- <form action="/action_page.php" target="_blank">
+    <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+    <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="How many people" required name="People"></p>
+    <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time" required name="date" value="2017-11-16T20:00"></p>
+    <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
+    <p><button class="w3-button w3-black" type="submit">SEND MESSAGE</button></p>
+    </form> -->
+</div>
+</div>
+
+<!-- End page content -->
+</div>
+      
+</body>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+<p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+
+</html>
+
