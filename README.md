@@ -1,6 +1,6 @@
 # zmertens.github.io
 
-My online tech portfolio, projects & code reviews, tutorials, and blogs
+My online tech portfolio
 
  - [about me](zmertens.github.io/#about)
 

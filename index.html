@@ -21,16 +21,13 @@ body, html {
 .bgimg {
     background-position: center;
     background-size: cover;
-    /* background-image: url("https://media.giphy.com/media/9r1isaLSyHY1cnvUT9/giphy.gif"); */
-    background-image: url("https://media.giphy.com/media/26u43GwxpIiUgrHI4/giphy.gif");
+    background-image: url("https://media.giphy.com/media/3o6fIREk4oFn9yb6ZW/giphy.gif");
     min-height: 75%;
 }
 .menu {
     display: none;
 }
 </style>
-
-<script type="text/javascript" src="randomLinks.js"></script>
 
 </head>
 
@@ -56,9 +53,9 @@ body, html {
     <div class="w3-col s3">
         <a href="#projects" class="w3-button w3-block w3-black">PROJECTS</a>
     </div>
-    <div class="w3-col s3">
+    <!-- <div class="w3-col s3">
         <a href="#blog" class="w3-button w3-block w3-black">BLOG</a>
-    </div>
+	</div> -->
 </div>
 </div>
       
@@ -83,13 +80,10 @@ body, html {
 <div class="w3-content" style="max-width:700px">
 <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">ABOUT</span></h5>
 <p>
-    Salutations, my name is Zach Mertens-McConnell. I am an American citizen.
-    I am hoping to use this site to share some of my experiences and beliefs
-    regarding my work on code both as a hobby and professionally.
-    I would also like to talk about some of my experiences attending hacking meetups.
-    Additionally, I'll mention some extracurricular projects I'm working on.
-    Finally, I'll drop various infinitely-looping gifts for entertainment and
-    personal amuesement.
+    Hello, my name is Zach Mertens-McConnell. I enjoy learning, writing, and reading about programming languages and technology.
+    This is my GitHub IO site. I talk about some of my GitHub projects here.
+	I also have some basic programming tutorial videos that I made once upon a time.
+	Lastly, I enjoy making new friends.
 </p>
 <!-- <div class="w3-panel w3-leftbar w3-light-grey">
 <p><i>"Use products from nature for what it's worth - but never too early, nor too late." Fresh is the new sweet.</i></p>
@@ -107,45 +101,54 @@ body, html {
     Here's a summary of some of my past, present, and future pet projects:
     <ol>
         <li>
-            <a href="github.com/zmertens/MazeGameCpp" target="_blank"></a>
+            <a href="https://github.com/zmertens/MazeGameCpp" target="_blank">MazeGameCpp</a>
 
-            I attempted to make a first-person shooter from scratch. 
-            Inspiration came from [this's guys Wolfenstein clone](https://github.com/BennyQBD/Wolfenstein3DClone).
-            I also added some Phong shading and Perlin noise and some sounds and music. I never really could get past that point once I had those features working. I thought of trying to add A-star pathfinding and automated level generation but I couldn't really keep up with the complexity of the code.
+            My attempt at making a first-person shooter from scratch. 
+			Inspiration came from <a href="https://github.com/BennyQBD/Wolfenstein3DClone" target="_blank">Benny QBD's Java Wolfenstein clone</a>
+            I also added some Phong shading and Perlin noise and some sounds and music. 
+			I never really could get past that point once I had those features working. 
+			I thought of trying to add A-star pathfinding and automated level generation but I lost interest.
             
-            Overall, *MazeGameCpp* was a good learning experience and I think it gave me an estimate of about how much of my own code I could manage in a one-man-wolf-project.
+            Overall, this was a good learning experience and a fun one-man-wolf-project.
             
-            I've since moved on to trying to use bonafide game engines such as [BabylonJS](https://doc.babylonjs.com/) and [Godot](https://godotengine.org/) and I dabbled with Unity and Unreal for a bit.
-            
-            Other thoughts about game engines and the creative process can be expertly summarized in [this senior developer's lecture](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=video&cd=9&cad=rja&uact=8&ved=0ahUKEwidhKub-6HbAhVDR6wKHfHBBnIQtwIITjAI&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DGK7ntA7a2vk&usg=AOvVaw1rtrkCC_u7X4_ER08MOh4o) at Digipen.
+			<a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=video&cd=9&cad=rja&uact=8&ved=0ahUKEwidhKub-6HbAhVDR6wKHfHBBnIQtwIITjAI&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DGK7ntA7a2vk&usg=AOvVaw1rtrkCC_u7X4_ER08MOh4o" target="_blank">This lecture at Digipen</a> has a a real good take on game development processes.
         </li>
         <li>
-            word
-        </li>
-    </ol>
-    
-    <a href="https://github.com/zmertens/checkers" target="_blank"></a>
+    		<a href="https://github.com/zmertens/checkers" target="_blank">checkers</a>
 
-This started as a school project for an *Introduction to Programming Languages, CSE240* course at **Arizona State University**.
-The idea was to create the Checkers logic in C++, and for extra credit, add a GUI. I don't remember if we got to adding the GUI, but afterwords I kept working on it and used [SFML](sfml-dev.org) to create some graphics. It helped me land an internship later on which was great.
-    <a href="github.com/zmertens/Parlez13k" target="_blank"></a>
-    <a href="github.com/zmertens/SeqAndDestroy" target="_blank"></a>
-    I worked on this in the [Cartwright Lab](https://cartwrig.ht/) for a community outreach event with @anderspitman and @aahowell3. The idea was to make a bubble-shooter-like game that emulates how HIV cells are reproduced and destroyed.
-    Most of the JavaScript was written by @anderspitman; we used PhaserIO for the game engine and I shamelessly took one of the PhaserIO Worley shader examples to use as a background.
-    <a href="github.com/zmertens/closer" target="_blank"></a>
-    An artistic text editor designed to show Git repository versions in-depth.
-    <a href="github.com/zmertens/zmertens.githbu.io" target="_blank">This website</a>
-    <a href="github.com/zmertens/cmake-example" target="_blank"></a>
-    This is how I remind me how to use CMake. 
-Some of the features include ExternalDependencies and creating a shared/static library.
-I've been down the bottle of every build system, *yeah*.
-    <a href="WIP" target="_blank">WIP</a>
-</p>
-<p>
-    Here's a summary of some of my contributions and forks:
-  
-    <a href="https://github.com/zmertens/imgui" target="_blank">Working on ImGui</a>
-    <a href="https://github.com/zmertens/dawg" target="_blank">Working on Dawg</a>
+			This started as a school project for an *Introduction to Programming Languages, CSE240* course at **Arizona State University**.
+			The idea was to create the Checkers logic in C++, and for extra credit, add a GUI. We never got to adding a real GUI,
+			but afterwords I kept working on it and used <a href="sfml-dev.org" target="_blank">SFML</a> to create some graphics. 
+			It helped me land an internship later on which was great.
+	    <li>
+			<a href="https://github.com/zmertens/Parlez13k" target="_blank">parlez13k</a>
+			This project is for the Parlez13k game jam. The idea is to keep answering questions until the computer goes out with you, or something, in 13k javascript file size.
+		</li>
+    	<li>
+			<a href="https://github.com/zmertens/SeqAndDestroy" target="_blank">seq & destroy</a>
+    		I helped work on this project for a community outreach event at the BioDesign Institute at Arizona State University. 
+			The idea was to make a bubble-shooter-like game that emulates how HIV cells are reproduced and destroyed.
+			Most of the JavaScript was written by @anderspitman; we used PhaserIO for the game engine and I shamelessly took one of the PhaserIO Worley shader examples to use as a background.
+		</li>
+
+    	<li>
+			<a href="https://github.com/zmertens/zmertens.github.io" target="_blank">This website</a>
+		</li>
+    	<li>
+			<a href="https://github.com/zmertens/cmake-example" target="_blank">a project for using fun cmake features</a>
+    		This is how I remind me how to use CMake the way I really am.
+			Some of the features include ExternalDependencies and creating a shared/static library.
+			I've been down the bottle of every build system, <em>yeah</em>.
+		</li>
+		<li>
+	    	<a href="https://github.com/zmertens/imgui" target="_blank">Dear ImGui Fork</a>
+			Working on adding an Android example for "Dear Imgui"
+		</li>
+	    <li>
+			<a href="https://github.com/zmertens/dawg" target="_blank">DAWG: DNA Analysis with Gaps Fork</a>
+			Trying to understand the code within code within ourselves.
+		</li>
+    </ol>
 </p>
 <!-- <div class="w3-panel w3-leftbar w3-light-grey">
 <p><i>"Use products from nature for what it's worth - but never too early, nor too late." Fresh is the new sweet.</i></p>
@@ -153,7 +156,7 @@ I've been down the bottle of every build system, *yeah*.
 </div> -->
 <!-- <img src="/w3images/coffeeshop.jpg" style="width:100%;max-width:1000px" class="w3-margin-top"> -->
 <p><strong>GitHub Account:</strong> <a href="https://github.com/zmertens" target="_blank" class="w3-hover-text-blue">My GitHub</a></p>
-<p><strong>LinkedIn:</strong> <a href="https://linkedin.com/zmm45312" target="_blank" class="w3-hover-text-pink">My LinkedIn</a></p>
+<p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/zmm45312" target="_blank" class="w3-hover-text-pink">My LinkedIn</a></p>
 </div>
 </div>
 
@@ -213,16 +216,12 @@ I've been down the bottle of every build system, *yeah*.
 </div>
 
 <!-- Blog Container -->
-<div class="w3-container" id="blog">
-<div class="w3-content" style="max-width:700px">
-<h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">BLOG</span></h5>
-<p>
-    I had an exciting time attending the Desert Code Camp 2018 convention at the
-    Chandler-Gilbert Community College. This event has been going on for several years,
-    and it has done a great job in organizing local coders, tech evangelists, and
-    industry leaders. Turnout was great, lectures were informative and relevant to
-    their title, and there was free food.
-</p>
+<!-- <div class="w3-container" id="blog"> -->
+<!-- <div class="w3-content" style="max-width:700px"> -->
+<!-- <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">BLOG</span></h5> -->
+<!-- <p> -->
+    
+<!-- </p> -->
 
 <!-- <p> -->
     <!-- In addselection of sides and salads and other good stuff. -->
@@ -240,26 +239,17 @@ I've been down the bottle of every build system, *yeah*.
 <!-- Contact/Area Container -->
 <div class="w3-container" id="where" style="padding-bottom:32px;">
 <div class="w3-content" style="max-width:700px">
-<h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">WHERE TO FIND US</span></h5>
+<h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">DISCLAIMER</span></h5>
 <!-- <p>Find us at some address at some place.</p>
 <div id="googleMap" class="w3-sepia" style="width:100%;height:400px;"></div> -->
 <p><span class="w3-tag">FYI!</span> 
-    This site is my personal website where I talk about my feelings.
+    This site is my personal website where I talk about my feelings about programming repositories projects.
     I am extremely thankful for the GitHub static site service for providing this static site service.
     <em>You do want to express yourself don't you?</em>
-    <em>The thoughts and opinions posted here represent nothing in particular but my spacetime.</em>
+    <b>The thoughts and opinions posted here represent nothing in particular but my spacetime.</b>
 </p>
-<!-- <p><strong>Random Link</strong> takes you anywhere</p>
-<form action="randomLinks()" target="_blank"> -->
-    
-</form>
-    <!-- <form action="/action_page.php" target="_blank">
-    <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
-    <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="How many people" required name="People"></p>
-    <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time" required name="date" value="2017-11-16T20:00"></p>
-    <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
-    <p><button class="w3-button w3-black" type="submit">SEND MESSAGE</button></p>
-    </form> -->
+
+
 </div>
 </div>
 
