@@ -1,9 +1,7 @@
-# zmertens.github.io
+### My static GitHub IO
 
-My online tech portfolio
+[zmertens.github.io](zmertens.github.io)
 
- - [about me](zmertens.github.io/#about)
+### References and Templates
 
-### References and Citations
-
- - [W3 CSS Templates](https://www.w3schools.com/w3css/w3css_templates.asp)
+[W3 CSS Templates](https://www.w3schools.com/w3css/w3css_templates.asp)
