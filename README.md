@@ -1,6 +1,6 @@
 ### My static GitHub IO
 
-[zmertens.github.io](zmertens.github.io)
+[zmertens.github.io](https://zmertens.github.io)
 
 ### References and Templates
 
