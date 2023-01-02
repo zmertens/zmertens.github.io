@@ -14,4 +14,8 @@ export class RepoService {
     const repoes = of(REPOES)
     return repoes;
   }
+
+  addRepo(repo: Repo): void {
+    REPOES.push(repo);
+  }
 }

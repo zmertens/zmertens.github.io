@@ -1,1 +1,13 @@
-<p>repo-detail works!</p>
+<form #myForm="ngForm" (ngSubmit)="submit(myForm)">
+  <div>
+    <label id="label1" for="input1">Repo Name (URL): </label>
+    <input type="text" name="input1" placeholder="repo name" required ngModel />
+  </div>
+  <div>
+    <label id="label2" for="input2">Repo Description: </label>
+    <input type="text" name="input2" placeholder="repo description" required ngModel />
+  </div>
+  <div>
+    <button type="submit" id="submitBtn" class="btn btn-primary">Submit</button>
+  </div>
+</form>
