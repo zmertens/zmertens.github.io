@@ -1,7 +1,3 @@
-### My static GitHub IO
+Creates a ThreeJS scene with my GitHub user icon.
 
-[zmertens.github.io](https://zmertens.github.io)
-
-### References and Templates
-
-[W3 CSS Templates](https://www.w3schools.com/w3css/w3css_templates.asp)
+![](public/screenshot1.png)
