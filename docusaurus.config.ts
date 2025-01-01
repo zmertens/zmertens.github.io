@@ -20,7 +20,7 @@ const config: Config = {
   organizationName: 'zmertens', // Usually your GitHub org/user name.
   projectName: 'zmertens.github.io', // Usually your repo name.
 
-  deploymentBranch: 'main',
+  deploymentBranch: 'master',
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
