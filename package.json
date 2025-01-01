@@ -1,6 +1,6 @@
 {
-  "name": "zmertens-github-io-new",
-  "version": "0.0.0",
+  "name": "zmertens-github-io",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "docusaurus": "docusaurus",
@@ -19,9 +19,11 @@
     "@docusaurus/preset-classic": "3.6.3",
     "@mdx-js/react": "^3.0.0",
     "clsx": "^2.0.0",
+    "i": "^0.3.7",
     "prism-react-renderer": "^2.3.0",
     "react": "^18.0.0",
-    "react-dom": "^18.0.0"
+    "react-dom": "^18.0.0",
+    "yarn": "^1.22.22"
   },
   "devDependencies": {
     "@docusaurus/module-type-aliases": "3.6.3",
